@@ -57,6 +57,21 @@ window.onload = function () {
     insertarExcusa();
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   // Añadimos boton e imput para añadir nuevas frases.
 
   var botonAñadirFrase = document.getElementById('botonAñadirFrase');                     //asignamos la variable botonAñadirFrase al boton de añadir frase
@@ -72,10 +87,10 @@ window.onload = function () {
           accion.push(nuevaFrase);                                                //añadimos la nueva frase al array accion                   
           break;
         case 'cosa':
-          cosa.push(nuevaFrase);                                                  //añadimos la nueva frase al array cosa
+          cosa.push(nuevaFrase);                                                        //añadimos la nueva frase al array cosa
           break;
         case 'lugar':
-          lugar.push(nuevaFrase);                                                 //añadimos la nueva frase al array lugar
+          lugar.push(nuevaFrase);                                                       //añadimos la nueva frase al array lugar
           break;
         default:
           break;
