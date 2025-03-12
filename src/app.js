@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function () {
   //write your code here
-  var sujeto = [
+  const sujeto = [
     "Mi abuelo borracho",
     "La tía chiflada de mi primo",
     "Mi vecino extraterrestre",
@@ -15,7 +15,7 @@ window.onload = function () {
     "Un ninja en sandalias"
   ];
 
-  var accion = [
+  const accion = [
     "se comió",
     "desintegró",
     "robó",
@@ -23,7 +23,7 @@ window.onload = function () {
     "transformó en confeti"
   ];
 
-  var cosa = [
+  const cosa = [
     "mis deberes intergalácticos",
     "mi celular a prueba de bombas",
     "mi computadora",
@@ -31,7 +31,7 @@ window.onload = function () {
     "mi sándwich gourmet"
   ];
 
-  var lugar = [
+  const lugar = [
     "en la estación espacial de mi abuela",
     "en la escuela de magia",
     "en el supermercado embrujado",
@@ -44,7 +44,7 @@ window.onload = function () {
   }
 
   function insertarExcusa() {
-    var parrafo = document.querySelector('.excusagenerada');                            //asignamos la variable parrafo al parrafo de excusa generada
+    let  parrafo = document.querySelector('.excusagenerada');                            //asignamos la variable parrafo al parrafo de excusa generada
     parrafo.innerText = GeneradorExcusas();                                             //le asignamos al parrafo de excusa generada el valor de la función GeneradorExcusas
   }
 
@@ -74,10 +74,10 @@ window.onload = function () {
   
   // Añadimos boton e imput para añadir nuevas frases.
 
-  var botonAñadirFrase = document.getElementById('botonAñadirFrase');                     //asignamos la variable botonAñadirFrase al boton de añadir frase
+  let botonAñadirFrase = document.getElementById('botonAñadirFrase');                     //asignamos la variable botonAñadirFrase al boton de añadir frase
   botonAñadirFrase.addEventListener('click', function () {                                //añadimos un evento al boton de añadir frase
-    var nuevaFrase = document.getElementById('nuevaFrase').value;                       //asignamos la variable nuevaFrase al valor del input de nueva frase
-    var selectorDeFrases = document.getElementById('selectorFrases');                   //asignamos la variable selectorDeFrases al selector de frases
+    let nuevaFrase = document.getElementById('nuevaFrase').value;                       //asignamos la variable nuevaFrase al valor del input de nueva frase
+    let selectorDeFrases = document.getElementById('selectorFrases');                   //asignamos la variable selectorDeFrases al selector de frases
     if (nuevaFrase) {                                                                   //si nuevaFrase es verdadero
       switch (selectorDeFrases.value) {                                               //hacemos un switch con el valor del selector de frases                            
         case 'sujeto':
